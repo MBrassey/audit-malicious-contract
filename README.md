@@ -18,6 +18,15 @@ Beginning a video with a warning about the prevalence of scams in the cryptocurr
 
 Providing smart contract code on platforms like binarypastes.com, rather than on peer-reviewed repositories such as GitHub or GitLab, raises immediate red flags regarding the legitimacy of the code.
 
+- Initial comment encourages user to not try first on testnet. 
+
+```
+// Testnet transactions will fail because they have no value in them
+```
+
+Using a testnet like Goerli allows users to safely observe and interact with a contract's functionality on-chain without risking real assets, providing a valuable opportunity for learning and verification. Contrary to claims that testnet transactions fail due to lack of value, they are crucial for understanding contract behavior in a risk-free environment.
+
+
 #### Decoding the attack
 The malicious activity in the contract is primarily executed through the StartNative function, which indirectly triggers the startArbitrageNative function. The critical lines that facilitate the theft of ETH are within the startArbitrageNative function:
 
