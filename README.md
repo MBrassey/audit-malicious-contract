@@ -1,8 +1,9 @@
 ## Malicious Solidity Decoded
 I was recently informed of a "front runner scam" involving a YouTube video promoting an Ethereum trading bot that claimed to utilize MEV (Maximal Extractible Value) techniques. This incident highlights the necessity for thorough examination and auditing of smart contracts tied to trading bots, especially those advertised on platforms such as YouTube.
 
-Marketed as utilizing advanced strategies, including transaction reordering by submitting transactions with higher gas fees for prioritized processing, and leveraging ChatGPT API keys to identify profitable transactions within the Ethereum mempool, the bot was ostensibly designed to maximize trading efficiency. However, its actual operation diverted users' Ethereum deposits directly to a scammer’s address through complex and hidden logic. This case highlights the essential need for thorough scrutiny and validation of smart contracts behind such trading bots, to prevent falling victim to sophisticated scams that exploit the complexity and novelty of blockchain technologies.
+Marketed as utilizing advanced strategies, including transaction reordering by submitting transactions with higher gas fees for prioritized processing, and leveraging ChatGPT API keys to identify profitable transactions within the Ethereum mempool, the bot was ostensibly designed to maximize trading efficiency. However, its actual operation diverted users' Ethereum deposits directly to a scammer’s address through complex and hidden logic. 
 
+Intrigued by its mechanics, I embarked on a detailed exploration to unravel how this particular front runner scam bot operated, as outlined in the subsequent sections where I decode its workings.
 
 #### Scam video on YouTube (WARNING)
 [How to make 2,700 with ChatGPT Slippage Strategy](https://m.youtube.com/watch?v=IkOUdbPeIxo&ab_channel=Cytra%7Cweb-3)
