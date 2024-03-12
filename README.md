@@ -40,7 +40,7 @@ function startArbitrageNative() internal  {
 }
 ```
 
-Here's what happens, summarized:
+Here's basically what happens:
 
 1. Calculating Addresses: The function calculates two addresses (tradeRouter and dataProvider) using the getDexRouter function with inputs from hardcoded bytes32 values (DexRouter, factory, and apiKey). These addresses are derived from obfuscated values, making it difficult to understand their true nature without knowing the exact mechanism of getDexRouter.
 
