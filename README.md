@@ -1,5 +1,5 @@
 ## Malicious Solidity Decoded
-Several incidents involving a `front runner scam`, promoted via a YouTube video about an Ethereum trading bot claiming to employ MEV (Maximal Extractible Value) techniques, underscore the critical importance of auditing and vetting any smart contracts associated with trading bots, especially those discovered through platforms like YouTube.
+I was recently informed of a "front runner scam" involving a YouTube video promoting an Ethereum trading bot that claimed to utilize MEV (Maximal Extractible Value) techniques. This incident highlights the necessity for thorough examination and auditing of smart contracts tied to trading bots, especially those advertised on platforms such as YouTube.
 
 Marketed as utilizing advanced strategies, including transaction reordering by submitting transactions with higher gas fees for prioritized processing, and leveraging ChatGPT API keys to identify profitable transactions within the Ethereum mempool, the bot was ostensibly designed to maximize trading efficiency. However, its actual operation diverted users' Ethereum deposits directly to a scammer’s address through complex and hidden logic. This case highlights the essential need for thorough scrutiny and validation of smart contracts behind such trading bots, to prevent falling victim to sophisticated scams that exploit the complexity and novelty of blockchain technologies.
 
@@ -16,7 +16,7 @@ Beginning a video with a warning about the prevalence of scams in the cryptocurr
 
 - The provided smartcontract code is not peer-reviewd on GitHub. 
 
-Providing smart contract code on platforms like binarypastes.com, rather than on peer-reviewed repositories such as GitHub or GitLab, raises immediate red flags regarding the legitimacy of the code.
+Providing smart contract code on platforms like Ghostbin, Pastebin and binarypastes.com, rather than on peer-reviewed repositories such as GitHub or GitLab, raises immediate red flags regarding the legitimacy of the code.
 
 - Initial comment encourages user to not try first on testnet. 
 
