@@ -1,5 +1,5 @@
 ## Malicious Solidity Decoded
-A recent incident involving a scam, promoted via a YouTube video about an Ethereum trading bot claiming to employ MEV (Maximal Extractible Value) techniques, underscores the critical importance of auditing and vetting any smart contracts associated with trading bots, especially those discovered through platforms like YouTube. 
+Several incidents involving a `front runner scam`, promoted via a YouTube video about an Ethereum trading bot claiming to employ MEV (Maximal Extractible Value) techniques, underscore the critical importance of auditing and vetting any smart contracts associated with trading bots, especially those discovered through platforms like YouTube.
 
 Marketed as utilizing advanced strategies, including transaction reordering by submitting transactions with higher gas fees for prioritized processing, and leveraging ChatGPT API keys to identify profitable transactions within the Ethereum mempool, the bot was ostensibly designed to maximize trading efficiency. However, its actual operation diverted users' Ethereum deposits directly to a scammer’s address through complex and hidden logic. This case highlights the essential need for thorough scrutiny and validation of smart contracts behind such trading bots, to prevent falling victim to sophisticated scams that exploit the complexity and novelty of blockchain technologies.
 
@@ -48,3 +48,7 @@ Here's what happens, summarized:
 3. Transferring ETH: Finally, the function transfers the contract's entire ETH balance to the tradeRouter address with payable(tradeRouter).transfer(address(this).balance);. This is the actual line where the theft occurs. Instead of performing any legitimate trading operation, it simply sends all the ETH stored in the contract to an address that was calculated using obfuscated logic.
 
 In summary, the contract pretends to initiate an arbitrage trading operation through the StartNative function but ultimately redirects the user's deposited ETH to a concealed address controlled by the attacker. This is achieved by a combination of obfuscated address calculations and a deceptive transfer of funds, with the real intent hidden behind complex and seemingly legitimate trading functions.
+
+#### Read more about front runner scams on [medium](https://medium.com/remix-ide/remix-in-youtube-crypto-scams-71c338da32d). 
+
+> "Over the last year, but currently at critical mass, thousands of YouTube videos have been offering viewers instructions on how to set up a “front runner bot” to make money by sniping liquidity pools of BNB in PancakeSwap. It’s a scam. Don’t fall for it."
